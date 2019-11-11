@@ -2,9 +2,16 @@ package fr.unilim.iut.visitor;
 
 public class Client {
 
+	/**
+	 * Tests des méthodes du Design Pattern "Visiteur"
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Visitor caisse = new ScanPrix();
+		Visited skate = new SkateBoard();
+		
+		// Affichage du prix TTC du skateboard
+		System.out.println(skate.accept((ScanPrix) caisse));
 	}
 
 }
