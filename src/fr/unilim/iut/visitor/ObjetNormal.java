@@ -6,7 +6,7 @@ package fr.unilim.iut.visitor;
  * @author quentin
  *
  */
-public class ObjetNormal implements Visited {
+public abstract class ObjetNormal implements Visited {
 	protected double tauxTVA = 0.2;
 	protected String nom;
 	protected double prixHT;
