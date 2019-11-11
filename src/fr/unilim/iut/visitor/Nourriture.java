@@ -16,5 +16,11 @@ public abstract class Nourriture implements Visited {
 		System.out.println(this.nom + " prix TTC : ");
 		return this.prixHT + (this.tauxTVA * this.prixHT);
 	}
+	
+	@Override
+	public double accept(Balance visiteur) {
+		System.out.println(this.nom + " poids : ");
+		return this.poids;
+	}
 
 }

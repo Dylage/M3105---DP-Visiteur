@@ -14,4 +14,11 @@ public interface Visited {
 	 * @return
 	 */
 	public double accept(ScanPrix visiteur);
+	
+	/**
+	 * Retourne le poids en kg calculé par le visiteur
+	 * @param visiteur
+	 * @return
+	 */
+	public double accept(Balance visiteur);
 }
